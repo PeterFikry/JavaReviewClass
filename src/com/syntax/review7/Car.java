@@ -2,7 +2,8 @@ package com.syntax.review7;
 
 public class Car {
 
-    String make, model;
+    protected String make;
+    String model;
     int year, horsepower;
 
     public Car(String make,String model){
@@ -26,8 +27,9 @@ public class Car {
         2.by using different type of the parameters
         3.sequence
      */
-    protected void drive (String destination){
+    protected String drive (String destination){
         System.out.println(make+" drives to "+destination);
+        return destination;
     }
     void drive(int speed,String destination){
         System.out.println(make+" drive to "+destination+" with speed ="+speed);
